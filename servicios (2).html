@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mariangel Camargo">
+    <meta name="descripcion"
+        content="Genera tu ticket de atención para revisión física de hardware, soporte técnico de computadores y mantenimiento PC de forma rápida y sencilla.">
+    <meta name="keywords" content="Soporte tecnico computadores, mantenimiento pc, reparación liceo, soporte de redes">
+    <link rel="stylesheet" href="css/style (2).css">
+    <title>Soporte Técnico de computadores </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">TECHCARE</a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index (2).html">Inicio</a></li>
+                    <li><a href="nosotros (2).html">Nosotros</a></li>
+                    <li><a href="servicios (2).html">Servicios</a></li>
+                    <li><a href="contacto (2).html">Contacto</a></li>
+                    <li><a href="finanzas (2).html">Finanzas</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <h1>Servicios de soporte técnico</h1>
+
+                <p>
+                    Elige el servicio que necesitas y solicita asistencia
+                    técnica para tus equipos y redes.
+                </p>
+
+            </div>
+        </section>
+
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Nuestros servicios</h2>
+
+                    <p>
+                        Soluciones técnicas para mantener tus equipos
+                        funcionando correctamente.
+                    </p>
+
+                </div>
+
+
+
+
+                <div class="cards" id="servicios-container">
+                </div>
+
+                <div class="ticket">
+                    <h2>🎫 Generar ticket de atención</h2>
+
+                    <label for="nombre-ticket">Nombre</label>
+                    <input type="text" id="nombre-ticket" placeholder="Ingresa tu nombre">
+
+                    <label for="tipo-falla">Tipo de falla</label>
+                    <select id="tipo-falla">
+                        <option value="">Selecciona una categoría</option>
+
+                        <option value="Hardware">Hardware</option>
+                        <option value="Software">Software</option>
+                        <option value="Redes">Redes</option>
+                        <option value="Limpieza">Limpieza</option>
+                    </select>
+
+
+                    <button id="generar-ticket" class="btn btn-primary">
+                        Generar ticket
+                    </button>
+
+                    <p id="error-ticket" class="error-message"></p>
+                </div>
+
+                <div id="ticket-generado" class="ticket" style="display: none;">
+                    <h2>🎫 Ticket generado</h2>
+                    <p id="datos-ticket"></p>
+                    <p id="numero-ticket"></p>
+                    <p id="espera-ticket"></p>
+                </div>
+
+
+                <div class="ticket" id="resumen-servicios">
+
+                    <h2>Servicio seleccionado</h2>
+
+                    <p id="servicio-seleccionado"></p>
+
+                    <p>
+                        Cantidad:
+                        <strong id="cantidad-servicio">0</strong>
+                    </p>
+
+                    <p>
+                        Total:
+                        <strong id="total-servicio">$0</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>¿Necesitas ayuda?</h2>
+
+                    <p>
+                        Si tienes dudas sobre qué servicio elegir,
+                        puedes contactarnos directamente.
+                    </p>
+
+                </div>
+
+                <div style="text-align: center;">
+
+                    <a href="contacto (2).html" class="btn btn-primary">
+                        Contactar a TECHCARE
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>TECHCARE</h3>
+                <p>Soporte Técnico de Computadores</p>
+            </div>
+
+            <div>
+                <h3>Conectividad y Redes</h3>
+                <p>Servicio de soporte y mantenimiento informático.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
